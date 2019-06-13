@@ -23,7 +23,6 @@ public class PresentationTest {
         Date mockDate = MockUtilsUserTest.buildMockDate();
         Message mockMessage = MockUtilsUserTest.buildMessage(mockDate);
 
-        Mapper mapper = new Mapper();
         ConsoleMessage consoleMessage = mapper.asUIModel(mockMessage, BaseCommandUseCase.Type.READ);
 
         Assert.assertNotNull(consoleMessage);
@@ -36,7 +35,6 @@ public class PresentationTest {
         Date mockDate = MockUtilsUserTest.buildMockDate();
         Message mockMessage = MockUtilsUserTest.buildMessage(mockDate);
 
-        Mapper mapper = new Mapper();
         ConsoleMessage consoleMessage = mapper.asUIModel(mockMessage, BaseCommandUseCase.Type.POST);
 
         Assert.assertNotNull(consoleMessage);
@@ -49,7 +47,6 @@ public class PresentationTest {
         Date mockDate = MockUtilsUserTest.buildMockDate();
         Message mockMessage = MockUtilsUserTest.buildMessage(mockDate);
 
-        Mapper mapper = new Mapper();
         ConsoleMessage consoleMessage = mapper.asUIModel(mockMessage, BaseCommandUseCase.Type.FOLLOW);
 
         Assert.assertNotNull(consoleMessage);
@@ -62,7 +59,6 @@ public class PresentationTest {
         Date mockDate = MockUtilsUserTest.buildMockDate();
         Message mockMessage = MockUtilsUserTest.buildMessage(mockDate);
 
-        Mapper mapper = new Mapper();
         ConsoleMessage consoleMessage = mapper.asUIModel(mockMessage, BaseCommandUseCase.Type.WALL);
 
         Assert.assertNotNull(consoleMessage);
